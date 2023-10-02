@@ -21,10 +21,10 @@ function exibir(valor) {
 mostrar.addEventListener("click", calculo); // chama a função calculo apos clique = 
 
 function calculo() {
-  try {
+  if (conta.length > 0) {
     calc = eval(conta);
     resposta.innerHTML = calc;
-  } catch (error) {
+  } else {
     resposta.innerHTML = "Conta inválida"
   }
 }
